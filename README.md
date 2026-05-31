@@ -1,3 +1,6 @@
+## Flow chart
+
+```mermaid
 flowchart TD
     A([Browser request]) --> B[http.ListenAndServe :8080]
     B --> C{Match route}
@@ -21,3 +24,4 @@ flowchart TD
     P -->|Yes| Q([Return Hello!])
     P -->|No| R([405 method not allowed])
     O -->|No| S([404 not found])
+```
