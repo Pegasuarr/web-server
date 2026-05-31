@@ -2,9 +2,74 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Static Website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: system-ui, sans-serif; background: #fff; color: #111; }
+        .hero { padding: 4rem 2rem 3rem; text-align: center; }
+        .badge { display: inline-flex; align-items: center; gap: 6px; background: #f4f4f4; border: 1px solid #e5e5e5; border-radius: 99px; padding: 4px 14px; font-size: 12px; color: #666; margin-bottom: 1.5rem; }
+        .hero h1 { font-size: 42px; font-weight: 500; line-height: 1.2; margin-bottom: 1rem; }
+        .hero h1 span { color: #534AB7; }
+        .hero p { font-size: 16px; color: #555; max-width: 480px; margin: 0 auto 2rem; line-height: 1.7; }
+        .btn-row { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+        .btn-primary { background: #534AB7; color: #fff; border: none; padding: 10px 24px; border-radius: 8px; font-size: 14px; font-weight: 500; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; text-decoration: none; }
+        .btn-secondary { background: transparent; color: #111; border: 1px solid #ddd; padding: 10px 24px; border-radius: 8px; font-size: 14px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; text-decoration: none; }
+        .divider { height: 1px; background: #eee; margin: 0 2rem; }
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; padding: 2.5rem 2rem; }
+        .card { border: 1px solid #eee; border-radius: 12px; padding: 1.25rem; }
+        .card-icon { width: 36px; height: 36px; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-bottom: 12px; font-size: 18px; }
+        .card h3 { font-size: 14px; font-weight: 500; margin-bottom: 6px; }
+        .card p { font-size: 13px; color: #666; line-height: 1.6; }
+        .footer { padding: 1.5rem 2rem; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #eee; }
+        .footer p { font-size: 13px; color: #888; }
+        .footer-links { display: flex; gap: 16px; }
+        .footer-links a { font-size: 13px; color: #888; text-decoration: none; }
+    </style>
 </head>
 <body>
-    <h2>Static Website</h2>
+
+<div class="hero">
+    <div class="badge">
+        <i class="ti ti-sparkles"></i> Built with Go & HTML
+    </div>
+    <h1>Build something <span>beautiful</span><br>that lasts</h1>
+    <p>A clean, fast static website served straight from your Go server. No framework needed — just code that works.</p>
+    <div class="btn-row">
+        <a href="/form.html" class="btn-primary"><i class="ti ti-forms"></i> Go to Form</a>
+        <a href="/hello" class="btn-secondary"><i class="ti ti-hand-stop"></i> Say Hello</a>
+    </div>
+</div>
+
+<div class="divider"></div>
+
+<div class="features">
+    <div class="card">
+        <div class="card-icon" style="background:#EEEDFE; color:#534AB7"><i class="ti ti-bolt"></i></div>
+        <h3>Fast</h3>
+        <p>Served directly from Go's HTTP server — no overhead, instant response.</p>
+    </div>
+    <div class="card">
+        <div class="card-icon" style="background:#E1F5EE; color:#0F6E56"><i class="ti ti-shield-check"></i></div>
+        <h3>Secure</h3>
+        <p>Static files with no database exposure. Simple and safe by design.</p>
+    </div>
+    <div class="card">
+        <div class="card-icon" style="background:#FAECE7; color:#993C1D"><i class="ti ti-adjustments"></i></div>
+        <h3>Flexible</h3>
+        <p>Add handlers, forms, and routes easily as your project grows.</p>
+    </div>
+</div>
+
+<div class="footer">
+    <p>© 2026 Static Website</p>
+    <div class="footer-links">
+        <a href="/form.html">Form</a>
+        <a href="/hello">Hello</a>
+        <a href="/health">Health</a>
+    </div>
+</div>
+
 </body>
 </html>
